@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="webkit" name="renderer"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>
+   Tenda | LOGIN
+  </title>
+  <link href="favicon.ico" rel="shortcut icon"/>
+  <link href="css/reasyui.css?t=20161123118" rel="stylesheet"/>
+  <link href="css/login.css?t=20161123118" rel="stylesheet"/>
+  <style>
+   .icon-eye {
+    position: relative;
+    left: 211px;
+    top: 8px;
+    cursor: pointer;
+  }
+  </style>
+  <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 
+HTML5SHIV需放在头部，RESPOND.JS需要服务器-->
+  <!--[if lt IE 9]><script src="./js/libs/respond.min.js"></script><script src="./js/libs/html5shiv.min.js"></script><![endif]-->
+  <script src="lang/b28n.js?t=20161123118">
+  </script>
+ </head>
+ <body>
+  <noscript>
+   <div class="test-tips" id="testJs">
+    <p>
+     Error! The browser does not support JavaScript.
+    </p>
+    <p>
+     Please enable JavaScript or try another browser compatible with JavaScript to 
+      experience more features of the device.
+    </p>
+   </div>
+  </noscript>
+  <div class="none" id="main_content">
+   <section class="container">
+    <form action="check.html" method="post" name="Login">
+     <input id="password" name="password" type="hidden"/>
+     <div class="row">
+      <div class="center-block col-sm-7 col-md-5 col-lg-4 pull-none">
+       <article class="login box-shadow" id="loginWrap">
+        <header>
+         <img class="img-responsive" src="img/logo.png"/>
+        </header>
+        <div class="form-group ico-groups country" id="loginLangWrap">
+         <label class="sr-only">
+          Language
+         </label>
+         <label class="ico icon-lang?">
+           <i class="fa-solid fa-earth-americas"></i>
+         </label>
+         <div class="form-control ico-text" id="country" name="country">
+         </div>
+        </div>
+        <div class="form-group ico-groups" id="loginPwdWrap">
+         <label class="sr-only">
+          Password
+         </label>
+         <label class="ico icon-lock?" style="margin-left: 14px">
+           <i class="fa-solid fa-lock"></i>
+         </label>
+         <input class="form-control ico-text pwd-input" id="login-password" maxlength="32" style="padding-right: 50px;padding-left: 44px;" type="password"/>
+         <label class="icon-eye vis-eyes none" style="top:-30px">
+          <img src="img/visible.png" style="width:25px"/>
+         </label>
+         <label class="icon-eye invis-eyes" style="top:-28px">
+          <img src="img/invisible.png" style="width:25px"/>
+         </label>
+         <div class="text-warning" id="errMsg">
+         </div>
+        </div>
+        <div class="form-group">
+         <button class="btn btn-primary btn-lg btn-block" id="save" type="button">
+          Login
+         </button>
+        </div>
+        <footer class="forget">
+         <p class="forget-link" id="forgotCaret">
+          Forgot your password?
+          <b class="caret active" id="login-caret">
+          </b>
+         </p>
+         <div class="forget-info none">
+          <p>
+           &gt; First, push the reset button for about 8 seconds and then release it to reset your router.
+           <br/>
+           Second, set a new login password.
+          </p>
+          <p class="hidden-xs">
+           &gt;Tip: Once complete, you will have to reconfigure the router for Internet access.
+          </p>
+         </div>
+        </footer>
+       </article>
+       <article class="box-shadow over-user none" id="overUserWrap">
+        <header>
+         <img class="img-responsive" src="img/logo.png"/>
+        </header>
+        <div class="form-group">
+         <p class="text-danger" style="text-align:center;">
+          Up to 4 administrators have logged in.
+         </p>
+        </div>
+       </article>
+      </div>
+     </div>
+    </form>
+   </section>
+  </div>
+  <script src="js/libs/j.js?t=20161123118">
+  </script>
+  <script src="js/libs/reasy-ui-1.0.3.js?t=20161123118">
+  </script>
+  <script src="js/libs/common.js?t=20161123118">
+  </script>
+  <script src="js/login.js?t=20161123118">
+  </script>
+ </body>
+</html>
